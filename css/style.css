@@ -1,5 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 
+    /*==== GLOBAL ==== */
 *  {
     margin: 0;
     padding: 0;
@@ -30,7 +31,7 @@
     text-align: center;
 }
 
-.button {
+.button Play-Game{
     background-color: rgb(69, 104, 130);
     height: 50px;
     width: 110px;
@@ -44,4 +45,15 @@
 .button a {
     background-color: rgb(69, 104, 130);
     text-decoration: none;
+}
+
+/*==== GAME CSS ====*/
+
+.body-page-games {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+
 }
