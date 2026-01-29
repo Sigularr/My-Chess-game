@@ -1,0 +1,47 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(27, 60, 83);
+    color: rgb(227, 227, 227);
+    font-family: 'Bitcount Grid DOuble';
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    font-size: 55px;
+}
+
+.container p {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(69, 104, 130);
+    height: 50px;
+    width: 110px;
+    border-radius: 7px;
+    box-shadow: 3px 2px 2px rgb(227, 227, 227);
+    border: 3px solid rgb(227, 227, 227);
+    font-size: medium;
+    letter-spacing: 2px;
+}
+
+.button a {
+    background-color: rgb(69, 104, 130);
+    text-decoration: none;
+}
