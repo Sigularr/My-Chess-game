@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 
-/* !==== GAME CSS ====*/
+/* ! ==== GAME CSS ====*/
 
 .body-pages-game {
     display: flex;
@@ -55,10 +55,10 @@
     align-items: center;
 }
 
-.Config {
+.config {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
     padding: 16px;
     border: 2px solid rgb(227, 227, 227);
     border-radius: 6px;
@@ -66,36 +66,69 @@
     letter-spacing: 2px;
 }
 
-.Config-title {
+.config-title {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 3px;
     text-align: center;
     background-color: rgb(69, 104, 130);
 }
 
-.time-options {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+/*==== CONFIGURAÇÕES*/
+.config-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: center;
     background-color: rgb(69, 104, 130);
 }
 
-.time-options button {
+.config-options button {
     background-color: rgb(27, 60, 83);
     border-radius: 30px;
     border: 2px solid rgb(227, 227, 227);
-
     font-size: 18px;
     letter-spacing: 2px;
     color: white;
-
     padding: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
-.time-options button:hover {
+.config-options button:hover {
     transform: scale(1.05);
     background-color: rgb(227, 227, 227);
     color: rgb(27, 60, 83);
+}
+
+.config-options-go{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 60, 83);
+    border-radius: 30px;
+    border: 2px solid rgb(227, 227, 227);
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.config-options-go button {
+    background-color: rgb(27, 60, 83);
+    border: 2px solid rgb(27, 60, 83);
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.config-options-go hover {
+    transform: scale(1.05);
+    background-color: rgb(227, 227, 227);
+    color: rgb(27, 60, 83)
 }
