@@ -31,29 +31,71 @@
     text-align: center;
 }
 
-.button Play-Game{
+.button-Play-Game {
     background-color: rgb(69, 104, 130);
     height: 50px;
     width: 110px;
     border-radius: 7px;
     box-shadow: 3px 2px 2px rgb(227, 227, 227);
-    border: 3px solid rgb(227, 227, 227);
+    border: 2px solid rgb(227, 227, 227);
     font-size: medium;
     letter-spacing: 2px;
 }
-
-.button a {
+.button-Play-Game a {
     background-color: rgb(69, 104, 130);
     text-decoration: none;
 }
 
-/*==== GAME CSS ====*/
+/* !==== GAME CSS ====*/
 
-.body-page-games {
+.body-pages-game {
     display: flex;
     height: 100vh;
-    width: 100vh;
     justify-content: center;
     align-items: center;
+}
 
+.Config {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 2px solid rgb(227, 227, 227);
+    border-radius: 6px;
+    background-color: rgb(69, 104, 130);
+    letter-spacing: 2px;
+}
+
+.Config-title {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(69, 104, 130);
+}
+
+.time-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: rgb(69, 104, 130);
+}
+
+.time-options button {
+    background-color: rgb(27, 60, 83);
+    border-radius: 30px;
+    border: 2px solid rgb(227, 227, 227);
+
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.time-options button:hover {
+    transform: scale(1.05);
+    background-color: rgb(227, 227, 227);
+    color: rgb(27, 60, 83);
 }
