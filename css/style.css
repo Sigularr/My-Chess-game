@@ -74,25 +74,32 @@
     background-color: rgb(69, 104, 130);
 }
 
-/*==== CONFIGURAÇÕES*/
+/*==== SETTINGS ====*/
 .config-options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    justify-content: center;
+    gap: 8px;
     background-color: rgb(69, 104, 130);
+    justify-items: center;
 }
 
+/* Botões padrão */
 .config-options button {
+    width: 100%;
     background-color: rgb(27, 60, 83);
     border-radius: 30px;
     border: 2px solid rgb(227, 227, 227);
-    font-size: 18px;
     letter-spacing: 2px;
-    color: white;
+    color: rgb(227, 227, 227);
     padding: 10px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+/* Botões de tempo/dificuldade */
+.config-options button:not(.primary-action) {
+    width: 100%;
+    padding: 10px;
 }
 
 .config-options button:hover {
@@ -101,34 +108,12 @@
     color: rgb(27, 60, 83);
 }
 
-.config-options-go{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(27, 60, 83);
-    border-radius: 30px;
-    border: 2px solid rgb(227, 227, 227);
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.config-options-go button {
-    background-color: rgb(27, 60, 83);
-    border: 2px solid rgb(27, 60, 83);
+.config-options .primary-action {
+    grid-column: span 2;
+    width: fit-content; /* ou auto */
+    padding: 8px 60px; /* Mais largo horizontalmente */
+    margin: 0 auto;
     font-size: 20px;
-    letter-spacing: 2px;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
+    font-weight: bold;
 }
 
-.config-options-go hover {
-    transform: scale(1.05);
-    background-color: rgb(227, 227, 227);
-    color: rgb(27, 60, 83)
-}

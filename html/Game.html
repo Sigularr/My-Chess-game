@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Game</title>
 </head>
 <body class="body-pages-game">
@@ -14,23 +14,27 @@
     - tabuleiro
     -->
     
-    <div class="config">
+    <div>
+      <div class="config">
         <p class="config-title">Select time for game</p>
         <div class="config-options">
-            <button data-time="0">No time</button>
-            <button data-time="3">3 Minutes</button>
-            <button data-time="5">5 Minutes</button>
-            <button data-time="10">10 Minutes</button>
+          <button data-time="0">No time</button>
+          <button data-time="3">3 Minutes</button>
+          <button data-time="5">5 Minutes</button>
+          <button data-time="10">10 Minutes</button>
         </div>
+
         <p class="config-title">Select the mode game</p>
         <div class="config-options">
-            <button data-difficulty="Player">1v1 with Player</button>
-            <button data-difficulty="AI">1v1 AI</button>
+          <button data-difficulty="Player">1v1 with Player</button>
+          <button data-difficulty="AI">1v1 AI</button>
         </div>
+
         <p class="config-title">Ready?</p>
-        <div class="config-options-go">
-            <button>GO</button>
+        <div class="config-options">
+          <button class="primary-action">GO</button>
         </div>
+      </div>
     </div>
 
     <script src="../js/script.js"></script>
