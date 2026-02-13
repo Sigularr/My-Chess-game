@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 
-/* ! ==== GAME CSS ====*/
+/* ! ==== GAME CSS ==== */
 
 .body-pages-game {
     display: flex;
@@ -64,6 +64,8 @@
     border-radius: 6px;
     background-color: rgb(69, 104, 130);
     letter-spacing: 2px;
+    position: relative;
+    left: 400px;
 }
 
 .config-title {
@@ -117,3 +119,17 @@
     font-weight: bold;
 }
 
+
+/* * ==== Chess-Board ==== */
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+}
+
+.square {
+    height: 50px;
+}
+
+.light { background: #eee; }
+.dark  { background: #444; }
